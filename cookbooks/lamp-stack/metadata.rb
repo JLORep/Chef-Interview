@@ -18,3 +18,7 @@ chef_version '>= 12.1' if respond_to?(:chef_version)
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/lamp-stack'
+depends 'mysql'
+depends 'mysql2_chef_gem'
+depends 'database'
+cookbook 'mysql', '= 6.1.3'
