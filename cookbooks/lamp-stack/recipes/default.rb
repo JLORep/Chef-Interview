@@ -1,10 +1,10 @@
 #
-# Cookbook Name:: lamp-stack
+# Cookbook Name:: lamp-stack-test
 # Recipe:: default
 #
 #
 
 execute "update-upgrade" do
-  command "apt-get update && apt-get upgrade -y"
+  command "sudo yum -y update"
   action :run
 end
