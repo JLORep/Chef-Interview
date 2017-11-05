@@ -1,14 +1,8 @@
-group "admin" do
-  gid 9999
-end
-
-
-user 'admin' do
-  comment 'Interview'
-  uid '9999'
-  gid '9999'
-  manage_home true
-  home '/home/admin'
-  shell '/bin/bash'
-  password 'testing'
+user "test" do
+  comment "test user"
+  uid 10001
+  gid "users"
+  home "/home/test"
+  shell "/bin/bash"
+  password "$1$JZbC.wGq$/PnBh746au.UIu/CeEQHh0"
 end
